@@ -3,25 +3,25 @@
 --Show all data in each of the tables.
 
 a.	SELECT 	*
-FROM 		ITEM;
+        FROM 	ITEM;
 
 b.	SELECT 	*
-FROM 		SHIPMENT;
+        FROM 	SHIPMENT;
 
 c.	SELECT 	*
-FROM 		SHIPMENT_ITEM;
+        FROM 	SHIPMENT_ITEM;
 
 
 --	List the ShipmentID, ShipperName, and ShipperInvoiceNumber of all shipments.
 
 SELECT 	ShipmentID, ShipperName, ShipperInvoiceNumber
-FROM 		SHIPMENT;
+FROM 	SHIPMENT;
 
 --List the ShipmentID, ShipperName, and ShipperInvoiceNumber for all shipments with an insured value greater than $10,000.00.
 
 SELECT 	ShipmentID, ShipperName, ShipperInvoiceNumber
-FROM 		SHIPMENT
-WHERE		InsuredValue > 10000;
+FROM 	SHIPMENT
+WHERE	InsuredValue > 10000;
 
 
 --List the ShipmentID, ShipperName, and ShipperInvoiceNumber of all shippers whose name starts with “AB”.
@@ -68,26 +68,26 @@ WHERE		InsuredValue > 10000;
 --Determine the average InsuredValue.
 
 SELECT 	AVG (InsuredValue) AS AvgInsuredValue
-FROM 		SHIPMENT;
+FROM 	SHIPMENT;
 
 
 
 --Count the number of shipments.
 
 SELECT 	COUNT (*) AS NumberOfShipments
-FROM 		SHIPMENT;
+FROM 	SHIPMENT;
 
 --Show ItemID, Description, Store, and a calculated column named StdCurrencyAmount that is equal to LocalCurrencyAmt times the ExchangeRate for all rows of ITEM.
 
 SELECT 	Item, Store,
-			LocalCurrencyAmt * ExchangeRate AS StdCurrencyAmount
-FROM 		ITEM;
+	LocalCurrencyAmt * ExchangeRate AS StdCurrencyAmount
+FROM 	ITEM;
 
 --Group item purchases by City and Store.
 
-SELECT 		City, Store
-FROM 			ITEM
-GROUP BY		City, Store;
+SELECT 	   City, Store
+FROM       ITEM
+GROUP BY   City, Store;
 
 --Count the number of purchases having each combination of City and Store.
 
