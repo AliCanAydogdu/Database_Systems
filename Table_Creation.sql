@@ -57,6 +57,6 @@ drop PublishDate
 truncate author;
 IMPORTANT : we cannot run this command because it was been referenced. If we want to empty this table first we have to delete references 
 
-#Copy BOOK table to BOOKEMPTY table without data
+#Copying BOOK table to BOOKEMPTY table without data
 
 create table If not exists BOOKEMPTY like BOOK;
