@@ -1,5 +1,3 @@
-# Ali Can Aydogdu
-
 --Show all data in each of the tables.
 
 a.	SELECT 	*
