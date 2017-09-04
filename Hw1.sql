@@ -1,4 +1,3 @@
-#Ali Can Aydogdu
 #Based on Sakila Database
 
 --Write a Sql query that brings all information from CITY table about Cities which Country ID is 15.
